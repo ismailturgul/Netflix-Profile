@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#lang-switch {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.container {
+  text-align: center;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+#maturity {
+  background-color: grey;
+}
+
+body {
+  background-color: rgb(14, 14, 14);
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#control-button {
+  background-color: black;
+  color: grey;
+}
+#delete-button {
+  background-color: black;
+  color: grey;
+}
+#control-button:hover {
+  background-color: whitesmoke;
+}
+#delete-button:hover {
+  background-color: red;
+}
+
+#name {
+  background-color: grey;
+  color: whitesmoke;
+}
+
+#edit {
+  background-color: black;
+  color: grey;
+}
+#edit:hover {
+  background-color: whitesmoke;
+  color: grey;
+}
+img {
+  width: 100px;
+  height: a;
+}
+
+.header{
+    color : white;
+    text-align: left;
+    font-size: 45px;
+    font-style: normal;
+    text-align: center;
+}
+
+hr {
+    size: 1px;
+    background-color: grey;
+    color: rgb(134, 134, 134);
+}
+
+.line{
+  size: 1px;
+  background-color: grey;
+}
+.pic {
+    height: 550px;
+}
+
+.RR1 .RR2  .RR3 {
+  background-color: rgb(14, 13, 13);
+  color: gray;
+  display: inline-block;
+  
+  font-size: x-small;
+}
+
+.RR1{
+  width: 90px;
+}
+.RR2{
+  width: 80px ;
+}
+
+.RR3{
+  width: 180px ;
+}
+.RR4{
+  width: 100px;
+  padding: 5px;
+}
+.line{
+  width: 550px;
+}
+.column2{
+  size: 250px;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="logo"><img src="https://midiaresearch.com/storage/uploads/blog/featured/1177/cover_image-1594998634.png"> </div>
+<div><h1 class="header"> Edit Profile</h1>
+  <hr class="line">
+</div>
+
+<div class="container">
+    <div class="row">
+      
+      <div class="col text-right" >
+        <img src=" https://strive.school/favicon.ico">
+        <div class="col justify-content-end" > 
+      </div>
+</div>
+
+      <div class="col text-left">
+        <div class="column2">
+        <label for="name"></label>
+        <input type="text" id="name" value="Strive Student">
+       
+      <label for="lang-switch">
+        <span lang="en">Language:</span>
+      <br>
+    </label>
+        <select id="lang-switch">
+            <option value="en" selected>English</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="tr">Turkish</option>
+            <option value="pl">German</option>
+        </select>
+
+        <label for="maturity-settings">
+            <span lang="en">Maturity:</span>
+            <input type="text" id="maturity" value="All MATURITY RATINGS" readonly><br><br>
+            <span>Show titles of <b>all maturity ratings</b> for this profile.</span>
+            <br>
+            <br>
+            <input class="RR4" type="button" id="edit" value="EDIT">
+            <hr>
+            <input type="checkbox" id="myCheck"> Autoplay next episode in a series on all devices.
+            <br>
+            <input type="checkbox" id="myCheck2"> Autoplay previews while browsing on all devices.
+          </div>
+    </div>
+  </div>
+    <hr>
+    <div class="">
+      <input class="RR1" type="button" name="SAVE" id="control-button" value="SAVE">       
+      <input class="RR2" type="button" name="Cancel" id="control-button" value="CANCEL"> 
+      <input class="RR3" type="button" name="Delete Profile" id="delete-button" value="DELETE PROFILE"> 
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    </div>
+</div>
+</body>
+</html>
